@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,22 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Enquête de PEUR</title>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet"/>
-  font-family: 'Ghostly';
-  src: url('ghostly.TTF') format('truetype');
-}
+  <style>
+    @font-face {
+      font-family: 'Ghostly';
+      src: url('ghostly.TTF') format('truetype');
+    }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --noir: #0a0a0f;
-      --encre: #12121a;
-      --brume: #1e1e2e;
-      --ardoise: #2a2a3e;
-      --or: #c9a84c;
-      --or-pale: #e8cc85;
-      --ivoire: #f5f0e8;
-      --gris-doux: #a8a8b8;
-      --vert-spectre: #4a9e7a;
-      --rouge-fantome: #8b3a3a;
+      --noir: #1e2a38;
+      --encre: #243040;
+      --brume: #2d3e50;
+      --ardoise: #354a5e;
+      --or: #e05570;
+      --or-pale: #f07a8a;
+      --ivoire: #f0eeeb;
+      --gris-doux: #b0bcc8;
+      --vert-spectre: #4a9e8a;
+      --rouge-fantome: #c0392b;
     }
 
     html { scroll-behavior: smooth; }
@@ -53,7 +56,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(to bottom, rgba(10,10,15,0.95), transparent);
+      background: linear-gradient(to bottom, rgba(30,42,56,0.95), transparent);
       backdrop-filter: blur(2px);
     }
 
@@ -102,10 +105,10 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 60% 50% at 50% 60%, rgba(74,158,122,0.06) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 30% at 20% 80%, rgba(201,168,76,0.04) 0%, transparent 60%),
-        radial-gradient(ellipse 50% 40% at 80% 20%, rgba(139,58,58,0.05) 0%, transparent 60%),
-        linear-gradient(180deg, #0a0a0f 0%, #12121a 50%, #0d0d14 100%);
+        radial-gradient(ellipse 60% 50% at 50% 60%, rgba(74,158,138,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 30% at 20% 80%, rgba(224,85,112,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 20%, rgba(74,158,138,0.05) 0%, transparent 60%),
+        linear-gradient(180deg, #1e2a38 0%, #243040 50%, #1a2530 100%);
     }
 
     /* Floating particles */
@@ -208,7 +211,7 @@
     .btn-primary {
       padding: 0.85rem 2.2rem;
       background: var(--or);
-      color: var(--noir);
+      color: var(--ivoire);
       font-family: 'Ghostly', sans-serif;
       font-size: 0.8rem;
       font-weight: 500;
@@ -223,7 +226,7 @@
     .btn-primary:hover {
       background: var(--or-pale);
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(201,168,76,0.3);
+      box-shadow: 0 8px 30px rgba(224,85,112,0.3);
     }
 
     .btn-secondary {
@@ -236,7 +239,7 @@
       letter-spacing: 0.15em;
       text-transform: uppercase;
       text-decoration: none;
-      border: 1px solid rgba(245,240,232,0.25);
+      border: 1px solid rgba(240,238,235,0.25);
       cursor: pointer;
       transition: all 0.3s;
     }
@@ -348,7 +351,7 @@
       width: 100%;
       aspect-ratio: 3/4;
       background: var(--brume);
-      border: 1px solid rgba(201,168,76,0.2);
+      border: 1px solid rgba(224,85,112,0.2);
       position: relative;
       overflow: hidden;
       display: flex;
@@ -360,13 +363,13 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at center, rgba(74,158,122,0.1) 0%, transparent 70%);
+      background: radial-gradient(ellipse at center, rgba(74,158,138,0.1) 0%, transparent 70%);
     }
 
     .apropos-placeholder {
       font-family: 'Ghostly', serif;
       font-size: 4rem;
-      color: rgba(201,168,76,0.15);
+      color: rgba(224,85,112,0.15);
       position: relative;
       z-index: 1;
     }
@@ -398,7 +401,7 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       padding: 0.35rem 0.9rem;
-      border: 1px solid rgba(201,168,76,0.3);
+      border: 1px solid rgba(224,85,112,0.3);
       color: var(--or-pale);
     }
 
@@ -438,8 +441,8 @@
       letter-spacing: 0.2em;
       text-transform: uppercase;
       padding: 0.4rem 1.2rem;
-      background: rgba(74,158,122,0.12);
-      border: 1px solid rgba(74,158,122,0.3);
+      background: rgba(74,158,138,0.12);
+      border: 1px solid rgba(74,158,138,0.3);
       color: var(--vert-spectre);
       margin-bottom: 2rem;
     }
@@ -460,7 +463,7 @@
       width: 100%;
       aspect-ratio: 2/3;
       background: var(--brume);
-      border: 1px solid rgba(201,168,76,0.12);
+      border: 1px solid rgba(224,85,112,0.12);
       position: relative;
       overflow: hidden;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -470,13 +473,13 @@
 
     .livre-card:hover .livre-cover {
       transform: translateY(-6px);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 30px rgba(201,168,76,0.08);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 30px rgba(224,85,112,0.08);
     }
 
     .livre-cover-inner {
       width: 100%;
       padding: 1.5rem 1rem;
-      background: linear-gradient(to top, rgba(10,10,15,0.95) 0%, transparent 100%);
+      background: linear-gradient(to top, rgba(30,42,56,0.95) 0%, transparent 100%);
       position: relative;
       z-index: 2;
     }
@@ -503,12 +506,11 @@
       z-index: 1;
     }
 
-    /* Unique color per book */
-    .livre-1 .livre-bg { background: radial-gradient(ellipse at 60% 30%, rgba(100,150,200,0.15) 0%, transparent 60%), linear-gradient(180deg, #151525 0%, #0a0a1a 100%); }
-    .livre-2 .livre-bg { background: radial-gradient(ellipse at 40% 40%, rgba(200,200,200,0.08) 0%, transparent 60%), linear-gradient(180deg, #181818 0%, #0f0f0f 100%); }
-    .livre-3 .livre-bg { background: radial-gradient(ellipse at 50% 30%, rgba(180,50,50,0.15) 0%, transparent 60%), linear-gradient(180deg, #1a1010 0%, #0f0808 100%); }
-    .livre-4 .livre-bg { background: radial-gradient(ellipse at 50% 40%, rgba(50,150,80,0.15) 0%, transparent 60%), linear-gradient(180deg, #0f1a10 0%, #080f08 100%); }
-    .livre-5 .livre-bg { background: radial-gradient(ellipse at 50% 30%, rgba(200,100,50,0.15) 0%, transparent 60%), linear-gradient(180deg, #1a1208 0%, #0f0a05 100%); }
+    .livre-1 .livre-bg { background: radial-gradient(ellipse at 60% 30%, rgba(100,150,200,0.15) 0%, transparent 60%), linear-gradient(180deg, #1e2a38 0%, #151f2a 100%); }
+    .livre-2 .livre-bg { background: radial-gradient(ellipse at 40% 40%, rgba(200,200,200,0.08) 0%, transparent 60%), linear-gradient(180deg, #202020 0%, #151515 100%); }
+    .livre-3 .livre-bg { background: radial-gradient(ellipse at 50% 30%, rgba(180,50,50,0.15) 0%, transparent 60%), linear-gradient(180deg, #2a1818 0%, #1a1010 100%); }
+    .livre-4 .livre-bg { background: radial-gradient(ellipse at 50% 40%, rgba(50,150,80,0.15) 0%, transparent 60%), linear-gradient(180deg, #182a1a 0%, #101a10 100%); }
+    .livre-5 .livre-bg { background: radial-gradient(ellipse at 50% 30%, rgba(200,100,50,0.15) 0%, transparent 60%), linear-gradient(180deg, #2a1e10 0%, #1a1208 100%); }
 
     .livre-coming {
       position: absolute;
@@ -520,7 +522,7 @@
       text-transform: uppercase;
       padding: 0.3rem 0.7rem;
       background: var(--or);
-      color: var(--noir);
+      color: var(--ivoire);
       font-weight: 500;
       z-index: 3;
     }
@@ -577,7 +579,7 @@
     .feature-icon {
       width: 36px;
       height: 36px;
-      border: 1px solid rgba(201,168,76,0.3);
+      border: 1px solid rgba(224,85,112,0.3);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -604,7 +606,7 @@
 
     .visites-card {
       background: var(--ardoise);
-      border: 1px solid rgba(201,168,76,0.12);
+      border: 1px solid rgba(224,85,112,0.12);
       padding: 2.5rem;
       position: sticky;
       top: 5rem;
@@ -649,8 +651,8 @@
     .interactif-preview {
       margin: 3rem 0;
       padding: 3rem;
-      border: 1px solid rgba(74,158,122,0.2);
-      background: rgba(74,158,122,0.04);
+      border: 1px solid rgba(74,158,138,0.2);
+      background: rgba(74,158,138,0.04);
       position: relative;
     }
 
@@ -683,7 +685,7 @@
       text-transform: uppercase;
       color: var(--vert-spectre);
       padding: 0.5rem 1.2rem;
-      border: 1px solid rgba(74,158,122,0.3);
+      border: 1px solid rgba(74,158,138,0.3);
       margin-top: 1rem;
     }
 
@@ -741,7 +743,7 @@
     .contact-link-icon {
       width: 32px;
       height: 32px;
-      border: 1px solid rgba(201,168,76,0.2);
+      border: 1px solid rgba(224,85,112,0.2);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -775,7 +777,7 @@
     .form-group textarea,
     .form-group select {
       background: var(--ardoise);
-      border: 1px solid rgba(201,168,76,0.15);
+      border: 1px solid rgba(224,85,112,0.15);
       color: var(--ivoire);
       padding: 0.85rem 1rem;
       font-family: 'Ghostly', serif;
@@ -788,7 +790,7 @@
     .form-group input:focus,
     .form-group textarea:focus,
     .form-group select:focus {
-      border-color: rgba(201,168,76,0.5);
+      border-color: rgba(224,85,112,0.5);
     }
 
     .form-group textarea { resize: vertical; min-height: 120px; }
@@ -798,7 +800,7 @@
     /* ── FOOTER ── */
     footer {
       padding: 2.5rem 3rem;
-      border-top: 1px solid rgba(201,168,76,0.1);
+      border-top: 1px solid rgba(224,85,112,0.1);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -815,7 +817,7 @@
     .footer-copy {
       font-family: 'Ghostly', sans-serif;
       font-size: 0.72rem;
-      color: rgba(168,168,184,0.5);
+      color: rgba(176,188,200,0.5);
       letter-spacing: 0.05em;
     }
 
@@ -827,7 +829,7 @@
     .social-btn {
       width: 34px;
       height: 34px;
-      border: 1px solid rgba(201,168,76,0.2);
+      border: 1px solid rgba(224,85,112,0.2);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -962,7 +964,7 @@
 
         <div class="livre-card livre-2">
           <div class="livre-cover">
-            <img src="EnquetedepeurT2.png" alt="La dame blancheu" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.7;" />
+            <img src="EnquetedepeurT2.png" alt="La dame blanche" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.7;" />
             <div class="livre-cover-inner">
               <div class="livre-numero">Tome 2</div>
               <div class="livre-titre">La Dame blanche</div>
@@ -1056,7 +1058,7 @@
 
         <div class="coming-soon-badge">
           <div class="dot-pulse"></div>
-          Enquêtes en préparation -  bientôt disponibles
+          Enquêtes en préparation - bientôt disponibles
         </div>
       </div>
     </div>
@@ -1091,7 +1093,7 @@
           </div>
         </div>
 
-     <form class="contact-form" name="contact" method="POST" data-netlify="true">
+     <form class="contact-form" name="contact" method="POST" data-netlify="true" action="/merci.html">
           <div class="form-group">
             <label>Nom</label>
             <input type="text" placeholder="Votre nom" />
@@ -1163,18 +1165,6 @@
         a.style.color = a.getAttribute('href') === `#${current}` ? 'var(--or)' : '';
       });
     });
-
-    // Form submit
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('button');
-      btn.textContent = 'Message envoyé ✓';
-      btn.style.background = 'var(--vert-spectre)';
-      setTimeout(() => {
-        btn.textContent = 'Envoyer le message';
-        btn.style.background = '';
-      }, 3000);
-    }
   </script>
 </body>
 </html>
