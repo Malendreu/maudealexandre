@@ -627,77 +627,51 @@
       text-align: center;
       margin-top: 1.5rem;
     }
-<!--
-    /* ── ENQUÊTES INTERACTIVES ── */
-    #interactif {
-      background: var(--brume);
-    }
+/* ── ENQUÊTES INTERACTIVES ── */
+#interactif {
+  background: var(--brume);
+}
 
-    .interactif-inner {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto;
-    }
+.interactif-inner {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
 
-    .interactif-inner .section-label {
-      justify-content: center;
-    }
-    .interactif-inner .section-label::after { display: none; }
+.interactif-inner .section-label {
+  justify-content: center;
+}
 
-    .interactif-preview {
-      margin: 3rem 0;
-      padding: 3rem;
-      border: 1px solid rgba(74,158,138,0.2);
-      background: rgba(74,158,138,0.04);
-      position: relative;
-    }
+.interactif-inner .section-label::after {
+  display: none;
+}
 
-    .interactif-preview::before {
-      content: '∞';
-      position: absolute;
-      top: -0.8rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--brume);
-      padding: 0 1rem;
-      font-size: 1rem;
-      color: var(--vert-spectre);
-    }
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--vert-spectre);
+  padding: 0.5rem 1.2rem;
+  border: 1px solid rgba(74, 158, 138, 0.3);
+  margin-top: 1rem;
+}
 
-    .interactif-preview p {
-      font-style: italic;
-      color: var(--gris-doux);
-      line-height: 1.8;
-      margin-bottom: 1rem;
-    }
+.dot-pulse {
+  width: 6px;
+  height: 6px;
+  background: var(--vert-spectre);
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite;
+}
 
-    .coming-soon-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.72rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--vert-spectre);
-      padding: 0.5rem 1.2rem;
-      border: 1px solid rgba(74,158,138,0.3);
-      margin-top: 1rem;
-    }
-
-    .dot-pulse {
-      width: 6px;
-      height: 6px;
-      background: var(--vert-spectre);
-      border-radius: 50%;
-      animation: pulse 1.5s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.7); }
-    }
--->
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.7); }
+}
     
     /* ── CONTACT ── */
     #contact {
