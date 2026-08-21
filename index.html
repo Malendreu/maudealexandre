@@ -413,132 +413,96 @@
       font-weight: 500;
     }
 
-    /* ── LIVRES ── */
-    #livres {
-      background: var(--encre);
-    }
+   <!-- LIVRES -->
+  <section id="livres">
+    <div class="container">
+      <div class="livres-header">
+        <p class="section-label">Collection</p>
+        <div class="collection-badge">Enquête de peur · Fides Jeunesse · 9 ans et +</div>
+        <h2 class="section-title">Les détectives de l'inexpliqué</h2>
+        <p style="color: var(--gris-doux); line-height: 1.7;">Une bande d'ados. Des fantômes bien réels. Et des mystères que personne d'autre n'ose élucider.</p>
+      </div>
 
-    .livres-header {
-      text-align: center;
-      max-width: 600px;
-      margin: 0 auto 4rem;
-    }
+      <div class="livres-grid">
 
-    .livres-header .section-label {
-      justify-content: center;
-    }
+        <!-- Tome 1 -->
+        <div class="livre-card livre-1">
+          <div class="livre-cover">
+            <a href="https://editionsfides.com/collections/alexandre-maude/products/enquete-de-peur-lesprit-de-feu" target="_blank" rel="noopener noreferrer" class="cover-link"></a>
+            <img src="EnquetedepeurT1.png" alt="Le fantôme bleu" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.7;" />
+            <div class="livre-cover-inner">
+              <div class="livre-numero">Tome 1</div>
+              <div class="livre-titre">Le Fantôme bleu</div>
+            </div>
+          </div>
+          <div class="livre-info">
+            <div class="livre-info-meta">Emma · gardiennage · spectre bleu</div>
+          </div>
+        </div>
 
-    .livres-header .section-label::after { display: none; }
+        <!-- Tome 2 -->
+        <div class="livre-card livre-2">
+          <div class="livre-cover">
+            <a href="https://editionsfides.com/collections/alexandre-maude/products/enquete-de-peur-lesprit-de-feu" target="_blank" rel="noopener noreferrer" class="cover-link"></a>
+            <img src="EnquetedepeurT2.png" alt="La dame blanche" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.7;" />
+            <div class="livre-cover-inner">
+              <div class="livre-numero">Tome 2</div>
+              <div class="livre-titre">La Dame blanche</div>
+            </div>
+          </div>
+          <div class="livre-info">
+            <div class="livre-info-meta">Damien · apprenti ghostbuster</div>
+          </div>
+        </div>
 
-    .collection-badge {
-      display: inline-block;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.68rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      padding: 0.4rem 1.2rem;
-      background: rgba(74,158,138,0.12);
-      border: 1px solid rgba(74,158,138,0.3);
-      color: var(--vert-spectre);
-      margin-bottom: 2rem;
-    }
+        <!-- Tome 3 -->
+        <div class="livre-card livre-3">
+          <div class="livre-cover">
+            <a href="https://editionsfides.com/collections/alexandre-maude/products/enquete-de-peur-lesprit-de-feu" target="_blank" rel="noopener noreferrer" class="cover-link"></a>
+            <img src="EnquetedepeurT3.png" alt="L'ombre rouge" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.7;" />
+            <div class="livre-cover-inner">
+              <div class="livre-numero">Tome 3</div>
+              <div class="livre-titre">L'Ombre rouge</div>
+            </div>
+          </div>
+          <div class="livre-info">
+            <div class="livre-info-meta">Sidonie · journal abandonné</div>
+          </div>
+        </div>
 
-    .livres-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 2rem;
-    }
+        <!-- Tome 4 -->
+        <div class="livre-card livre-4">
+          <div class="livre-cover">
+            <a href="https://editionsfides.com/collections/alexandre-maude/products/enquete-de-peur-lesprit-de-feu" target="_blank" rel="noopener noreferrer" class="cover-link"></a>
+            <img src="EnquetedepeurT4.png" alt="Le chardon et le spectre vert" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.7;" />
+            <div class="livre-cover-inner">
+              <div class="livre-numero">Tome 4</div>
+              <div class="livre-titre">Le Chardon et le spectre vert</div>
+            </div>
+          </div>
+          <div class="livre-info">
+            <div class="livre-info-meta">Ben · spectre verdâtre</div>
+          </div>
+        </div>
 
-    .livre-card {
-      position: relative;
-      cursor: pointer;
-      group: true;
-    }
+        <!-- Tome 5 -->
+        <div class="livre-card livre-5">
+          <div class="livre-cover">
+            <a href="https://editionsfides.com/collections/alexandre-maude/products/enquete-de-peur-lesprit-de-feu" target="_blank" rel="noopener noreferrer" class="cover-link"></a>
+            <img src="EnquetedepeurT5.png" alt="L'esprit de feu" style="width:100%; height:100%; object-fit:cover; position:absolute; inset:0; opacity:0.7;" />
+            <div class="livre-cover-inner">
+              <div class="livre-numero">Tome 5</div>
+              <div class="livre-titre">L'Esprit de feu</div>
+            </div>
+          </div>
+          <div class="livre-info">
+            <div class="livre-info-meta">Emma · esprit vengeur</div>
+          </div>
+        </div>
 
-    .livre-cover {
-      width: 100%;
-      aspect-ratio: 2/3;
-      background: var(--brume);
-      border: 1px solid rgba(224,85,112,0.12);
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-      display: flex;
-      align-items: flex-end;
-    }
-
-    .livre-card:hover .livre-cover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 30px rgba(224,85,112,0.08);
-    }
-
-    .livre-cover-inner {
-      width: 100%;
-      padding: 1.5rem 1rem;
-      background: linear-gradient(to top, rgba(30,42,56,0.95) 0%, transparent 100%);
-      position: relative;
-      z-index: 2;
-    }
-
-    .livre-numero {
-      font-family: 'Jump Scare', serif;
-      font-size: 0.6rem;
-      letter-spacing: 0.2em;
-      color: var(--or);
-      margin-bottom: 0.3rem;
-    }
-
-    .livre-titre {
-      font-family: 'Jump Scare', serif;
-      font-size: 0.95rem;
-      font-weight: 600;
-      color: var(--ivoire);
-      line-height: 1.3;
-    }
-
-    .livre-bg {
-      position: absolute;
-      inset: 0;
-      z-index: 1;
-    }
-
-    .livre-1 .livre-bg { background: radial-gradient(ellipse at 60% 30%, rgba(100,150,200,0.15) 0%, transparent 60%), linear-gradient(180deg, #1e2a38 0%, #151f2a 100%); }
-    .livre-2 .livre-bg { background: radial-gradient(ellipse at 40% 40%, rgba(200,200,200,0.08) 0%, transparent 60%), linear-gradient(180deg, #202020 0%, #151515 100%); }
-    .livre-3 .livre-bg { background: radial-gradient(ellipse at 50% 30%, rgba(180,50,50,0.15) 0%, transparent 60%), linear-gradient(180deg, #2a1818 0%, #1a1010 100%); }
-    .livre-4 .livre-bg { background: radial-gradient(ellipse at 50% 40%, rgba(50,150,80,0.15) 0%, transparent 60%), linear-gradient(180deg, #182a1a 0%, #101a10 100%); }
-    .livre-5 .livre-bg { background: radial-gradient(ellipse at 50% 30%, rgba(200,100,50,0.15) 0%, transparent 60%), linear-gradient(180deg, #2a1e10 0%, #1a1208 100%); }
-
-    .livre-coming {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.6rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.7rem;
-      background: var(--or);
-      color: var(--ivoire);
-      font-weight: 500;
-      z-index: 3;
-    }
-
-    .livre-info {
-      padding: 1rem 0.2rem 0;
-    }
-
-    .livre-info-titre {
-      font-family: 'Spooky Haunt', serif;
-      font-size: 0.92rem;
-      color: var(--ivoire);
-      margin-bottom: 0.3rem;
-    }
-
-    .livre-info-meta {
-      font-family: 'Inter', sans-serif;
-      font-size: 0.72rem;
-      color: var(--gris-doux);
-    }
+      </div>
+    </div>
+  </section>
 
     /* ── VISITES ── */
     #visites {
